@@ -26,9 +26,9 @@ body {
 
 .main {
   padding: 10px;
-  grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .characters {
@@ -180,4 +180,19 @@ body {
 
 .paginator select {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .characters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-main {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .characters-inner {
+    grid-template-columns: 1fr;
+  }
 }
