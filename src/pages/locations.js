@@ -8,10 +8,10 @@ const Home = async () => {
         <div class="locations">
             ${ locations.results.map(location => `
                 <article class="locations-item">
-                    <a href="/#/locations">
+                    <div>
                         <h2>${ location.name }</h2>
                         <p>${ location.dimension }</p>
-                    </a>
+                    </div>
                 </article>
             `).join('') }
         </div>

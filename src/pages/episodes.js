@@ -8,10 +8,10 @@ const Home = async () => {
         <div class="episodes">
             ${ episodes.results.map(episode => `
                 <article class="episodes-item">
-                    <a href="/#/episodes">
+                    <div>
                         <h2>${ episode.name }</h2>
                         <p>${ episode.air_date }</p>
-                    </a>
+                    </div>
                 </article>
             `).join('') }
         </div>
